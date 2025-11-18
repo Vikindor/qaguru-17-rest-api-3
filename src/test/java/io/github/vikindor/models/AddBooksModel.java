@@ -5,9 +5,9 @@ import lombok.Data;
 
 import java.util.List;
 
-@Data @AllArgsConstructor
+@Data
+@AllArgsConstructor
 public class AddBooksModel {
     String userId;
-
     List<IsbnModel> collectionOfIsbns;
 }

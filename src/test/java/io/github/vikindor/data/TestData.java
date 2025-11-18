@@ -6,6 +6,7 @@ import io.github.vikindor.models.LoginBodyModel;
 import java.util.List;
 
 public class TestData {
+
     protected static String userName = System.getProperty("userName");
     protected static String userPassword = System.getProperty("userPassword");
 

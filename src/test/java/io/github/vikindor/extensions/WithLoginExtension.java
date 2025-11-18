@@ -13,10 +13,10 @@ public class WithLoginExtension implements BeforeEachCallback, AfterEachCallback
     @Override
     public void beforeEach(ExtensionContext context) throws Exception {
         WithLogin annotation = context.getTestMethod()
-                               .map(m -> m.getAnnotation(WithLogin.class))
-                               .orElseGet(() -> context.getTestClass()
-                                                       .map(c -> c.getAnnotation(WithLogin.class))
-                                                       .orElse(null));
+                                      .map(m -> m.getAnnotation(WithLogin.class))
+                                      .orElseGet(() -> context.getTestClass()
+                                                              .map(c -> c.getAnnotation(WithLogin.class))
+                                                              .orElse(null));
 
         if (annotation == null) {
             return;

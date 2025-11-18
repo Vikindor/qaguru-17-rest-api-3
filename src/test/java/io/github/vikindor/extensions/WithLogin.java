@@ -11,6 +11,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @ExtendWith(WithLoginExtension.class)
 public @interface WithLogin {
-    String username() default ""; // опционально
-    String password() default ""; // опционально
+    String username() default "";
+    String password() default "";
 }

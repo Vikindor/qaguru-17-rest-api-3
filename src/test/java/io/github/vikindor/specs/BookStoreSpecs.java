@@ -27,6 +27,5 @@ public class BookStoreSpecs {
                 .log(STATUS)
                 .log(BODY)
                 .build();
-
     }
 }
